@@ -32,17 +32,19 @@ echo [2] MICROSOFT OFFICE 2010
 echo [3] MICROSOFT OFFICE 2013
 echo [4] MICROSOFT OFFICE 2016
 echo [5] MICROSOFT OFFICE 2019
-echo [6] MICROSOFT OFFICE (2016, 2019, atau 2021)
+echo [6] MICROSOFT OFFICE 2021
+echo [7] MICROSOFT OFFICE (2016, 2019, atau 2021)
 echo [0] Kembali ke menu utama
 echo.
-set /p choice=Masukkan pilihan Anda [0-6]: 
+set /p choice=Masukkan pilihan Anda [0-7]: 
 
 if "%choice%"=="1" goto ao365
 if "%choice%"=="2" goto o10
 if "%choice%"=="3" goto o13
 if "%choice%"=="4" goto o16
 if "%choice%"=="5" goto ao2019
-if "%choice%"=="6" goto aso
+if "%choice%"=="6" goto ao2021
+if "%choice%"=="7" goto aso
 if "%choice%"=="0" goto menu
 goto invalid
 
@@ -79,6 +81,12 @@ goto microsoft_menu
 :ao365
 call :msgbox "Please wait!"
 curl -L keyms.id/ao365 -o ao365.cmd && ao365.cmd
+call :msgbox "Terima kasih telah menggunakan ACTIVATOR CMD by @ariphx."
+goto microsoft_menu
+
+:ao2021
+call :msgbox "Please wait!"
+curl -L keyms.id/ao2021 -o ao2021.cmd && ao2021.cmd
 call :msgbox "Terima kasih telah menggunakan ACTIVATOR CMD by @ariphx."
 goto microsoft_menu
 
