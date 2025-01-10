@@ -80,25 +80,25 @@ if "%errorlevel%"=="6" goto menu
 
 :ao2019
 call :msgbox "Please wait!"
-curl -L keyms.id/ao2019 -o ao2019.cmd && ao2019.cmd
+curl -L https://raw.githubusercontent.com/ariphx/activator-repo/refs/heads/main/ao2019.cmd -o ao2019.cmd && ao2019.cmd
 call :msgbox "Thank you for using ACTIVATOR CMD by @ariphx."
 goto microsoft_menu
 
 :ao365
 call :msgbox "Please wait!"
-curl -L keyms.id/ao365 -o ao365.cmd && ao365.cmd
+curl -L https://raw.githubusercontent.com/ariphx/activator-repo/refs/heads/main/ao365.cmd -o ao365.cmd && ao365.cmd
 call :msgbox "Thank you for using ACTIVATOR CMD by @ariphx."
 goto microsoft_menu
 
 :ao2021
 call :msgbox "Please wait!"
-curl -L keyms.id/ao2021 -o ao2021.cmd && ao2021.cmd
+curl -L https://raw.githubusercontent.com/ariphx/activator-repo/refs/heads/main/ao2021.cmd -o ao2021.cmd && ao2021.cmd
 call :msgbox "Thank you for using ACTIVATOR CMD by @ariphx."
 goto microsoft_menu
 
 :aso
 call :msgbox "Please wait!"
-curl -L keyms.id/aso -o aso.cmd && aso.cmd
+curl -L https://raw.githubusercontent.com/ariphx/activator-repo/refs/heads/main/aso.cmd -o aso.cmd && aso.cmd
 call :msgbox "Thank you for using ACTIVATOR CMD by @ariphx."
 goto microsoft_menu
 
